@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Test Two</h1>
+    <iframe
+      id="youtube_video"
+      width="600"
+      height="340"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <script>
+      const channelID = 'UCMYzTKe3BBnL0OOoOXhEzKQ';
+      const reqURL = 'https://www.youtube.com/feeds/videos.xml?channel_id=';
+      $.getJSON(
+        'https://api.rss2json.com/v1/api.json?rss_url=' +
+          encodeURIComponent(reqURL) +
+          channelID,
+        function (data) {
+          var link = data.items[2].link; // change data.items[x] to current video (excluding scheduled)
+          var id = link.substr(link.indexOf('=') + 1);
+          $('#youtube_video').attr(
+            'src',
+            'https://youtube.com/embed/' + id + '?controls=0&showinfo=0&rel=0'
+          );
+        }
+      );
+    </script>
+    <h2>End Test</h2>
+  </body>
+</html>
+
+<!-- // UCMYzTKe3BBnL0OOoOXhEzKQ -->
