@@ -42,7 +42,8 @@
         'https://api.rss2json.com/v1/api.json?rss_url=' +
           encodeURIComponent(reqURL) +
           channelID,
-        function video_one(data) {
+
+        function videos(data) {
           var link = data.items[0].link; // change data.items[x] to current video (excluding scheduled)
           var id = link.substr(link.indexOf('=') + 1);
           $('#youtube_video_1').attr(
@@ -69,3 +70,5 @@
 </html>
 
 <!-- // UCMYzTKe3BBnL0OOoOXhEzKQ -->
+<!-- direct json return, used for finding title/desc -->
+<!-- https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?channel_id=UCMYzTKe3BBnL0OOoOXhEzKQ -->
