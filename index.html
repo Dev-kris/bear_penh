@@ -9,14 +9,32 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Test Two</h1>
+    <h1>Test Four</h1>
     <iframe
-      id="youtube_video"
+      id="youtube_video_1"
+      width="600"
+      height="340"
+      frameborder="0"
+      allowfullscreen
+    ></iframe
+    ><iframe
+      id="youtube_video_2"
+      width="600"
+      height="340"
+      frameborder="0"
+      allowfullscreen
+    >
+    </iframe>
+
+    <iframe
+      id="youtube_video_3"
       width="600"
       height="340"
       frameborder="0"
       allowfullscreen
     ></iframe>
+
+    <br />
     <script>
       const channelID = 'UCMYzTKe3BBnL0OOoOXhEzKQ';
       const reqURL = 'https://www.youtube.com/feeds/videos.xml?channel_id=';
@@ -24,10 +42,22 @@
         'https://api.rss2json.com/v1/api.json?rss_url=' +
           encodeURIComponent(reqURL) +
           channelID,
-        function (data) {
+        function video_one(data) {
+          var link = data.items[0].link; // change data.items[x] to current video (excluding scheduled)
+          var id = link.substr(link.indexOf('=') + 1);
+          $('#youtube_video_1').attr(
+            'src',
+            'https://youtube.com/embed/' + id + '?controls=0&showinfo=0&rel=0'
+          );
+          var link = data.items[1].link; // change data.items[x] to current video (excluding scheduled)
+          var id = link.substr(link.indexOf('=') + 1);
+          $('#youtube_video_2').attr(
+            'src',
+            'https://youtube.com/embed/' + id + '?controls=0&showinfo=0&rel=0'
+          );
           var link = data.items[2].link; // change data.items[x] to current video (excluding scheduled)
           var id = link.substr(link.indexOf('=') + 1);
-          $('#youtube_video').attr(
+          $('#youtube_video_3').attr(
             'src',
             'https://youtube.com/embed/' + id + '?controls=0&showinfo=0&rel=0'
           );
