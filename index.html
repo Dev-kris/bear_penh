@@ -36,7 +36,7 @@
   </head>
   <body class="bg-dark">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark text-sm bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
@@ -58,19 +58,22 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav nav-justify">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"
                 >The Bear Penh</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Episodes</a>
+              <a class="nav-link" href="#anchor">Cast</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://www.patreon.com/thebearpenh"
                 >Patreon</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="episodes.html">Recent Episodes</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -169,8 +172,9 @@
     </div>
 
     <!-- Hero Section -->
+
     <!-- Comming Soon Video -->
-    <div class="container">
+    <div id="recent-video" class="container">
       <div class="row">
         <div class="col-xs-12 text-center">
           <h1 class="text-white p-4" id="aboutUs">What comes next?</h1>
@@ -179,7 +183,7 @@
               class="shadow-lg mb-5 bg-dark rounded"
               width="720"
               height="405"
-              src="https://www.youtube.com/embed/KOqZ68Jp84k?controls=0"
+              src="https://www.youtube.com/embed/W1zEB49Seic"
               title="YouTube video player"
               allowfullscreen
             ></iframe>
@@ -187,16 +191,13 @@
         </div>
       </div>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+
     <!-- Comming Soon Video -->
 
     <!-- About Us -->
-    <section id="about-video" class="about-video text-white">
+    <a id="anchor" class="anchor py-5"></a>
+    <section class="text-white">
+      <h1 class="text-center py-5">Who is in your party?</h1>
       <div class="container py-5" data-aos="fade-up">
         <div class="row">
           <div
@@ -210,13 +211,11 @@
             data-aos="fade-right"
             data-aos-delay="100"
           >
-            <img src="./images/elf-male.jpeg" class="img-fluid" alt="" />
-            <a
-              href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
-              class="glightbox play-btn mb-4"
-              data-vbtype="video"
-              data-autoplay="true"
-            ></a>
+            <img
+              src="./images/Dez_CharacterArt.png"
+              class="img-fluid img-character"
+              alt=""
+            />
           </div>
 
           <div
@@ -316,13 +315,11 @@
             data-aos="fade-right"
             data-aos-delay="100"
           >
-            <img src="./images/elf-male.jpeg" class="img-fluid" alt="" />
-            <a
-              href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
-              class="glightbox play-btn mb-4"
-              data-vbtype="video"
-              data-autoplay="true"
-            ></a>
+            <img
+              src="./images/Sun_CharacterArt.png"
+              class="img-fluid img-character"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -339,13 +336,11 @@
             data-aos="fade-right"
             data-aos-delay="100"
           >
-            <img src="./images/elf-male.jpeg" class="img-fluid" alt="" />
-            <a
-              href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
-              class="glightbox play-btn mb-4"
-              data-vbtype="video"
-              data-autoplay="true"
-            ></a>
+            <img
+              src="./images/Cynthia_CharacterArt.png"
+              class="img-fluid img-character"
+              alt=""
+            />
           </div>
 
           <div
@@ -396,8 +391,8 @@
     <!-- About Us -->
 
     <!-- Footer -->
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <footer class="bg-dark text-center text-white">
       <div class="scroll-to-top">
         <a class="btn btn-dark" href="#">
@@ -469,7 +464,7 @@
 </html>
 <script>
   function scrollToBody() {
-    const element = document.getElementById('footer');
+    const element = document.getElementById('recent-video');
     element.scrollIntoView();
   }
 
