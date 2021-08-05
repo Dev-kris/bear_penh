@@ -35,3 +35,12 @@ a.anchor {
   top: -250px;
   visibility: hidden;
 }
+
+.video-bg {
+  background-image: url('/images/scroll.jpeg');
+  background-size: fill;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(116, 116, 116, 0.6);
+  border-radius: 25px;
+  /* filter: grayscale(80%); */
+}
