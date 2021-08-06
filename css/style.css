@@ -4,6 +4,12 @@
 * {
   font-family: 'MedievalSharp', cursive;
 }
+#nav-1 {
+  background-color: #f00; /*whichever you want*/
+  opacity: 0.8;
+  filter: (opacity=90);
+}
+
 .iframe-container {
   position: relative;
   width: 100%;
@@ -37,10 +43,13 @@ a.anchor {
 }
 
 .video-bg {
-  background-image: url('/images/scroll.jpeg');
-  background-size: fill;
+  background-image: url('/images/vid-bg.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  border: 2px solid rgb(116, 116, 116, 0.6);
-  border-radius: 25px;
   /* filter: grayscale(80%); */
+}
+
+#contact {
+  color: white;
+  height: 100vh;
 }
