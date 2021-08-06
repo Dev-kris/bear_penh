@@ -10,6 +10,41 @@
   filter: (opacity=90);
 }
 
+.parallax {
+  /* The image used */
+  background-image: url('../images/hero_map.png');
+  background-color: #444;
+  background-blend-mode: overlay;
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-outline {
+  color: #fff;
+  /* text-shadow: 0.04em 0 black, 0 0.04em black, -0.04em 0 black, 0 -0.04em black; */
+  text-shadow: 0.04em 0 black, 0 0.04em black, -0.04em 0 black, 0 -0.04em black,
+    -0.04em -0.04em black, -0.04em 0.04em black, 0.04em -0.04em black,
+    0.04em 0.04em black;
+  -webkit-font-smoothing: antialiased;
+}
+
+.subtitle-format {
+  color: white;
+  font-size: 1.3em;
+}
+
+.svg-border {
+  background-color: transparent;
+}
+
+.coming-soon-video {
+  border-radius: 50%;
+}
 .iframe-container {
   position: relative;
   width: 100%;
@@ -24,21 +59,15 @@
   height: 100%;
 }
 
-.text-outline {
-  color: #fff;
-  text-shadow: rgb(0, 0, 0) 1px 1px 5px;
-  -webkit-font-smoothing: antialiased;
-}
-
 .img-character {
   max-height: 400px;
 }
 
 /* offset anchor tags #anchor */
-a.anchor {
+a.cast {
   display: block;
   position: relative;
-  top: -250px;
+  top: -160px;
   visibility: hidden;
 }
 
@@ -46,10 +75,20 @@ a.anchor {
   background-image: url('/images/vid-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   /* filter: grayscale(80%); */
 }
 
 #contact {
   color: white;
   height: 100vh;
+}
+
+/* media queries */
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
