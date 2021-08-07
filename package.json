@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Dev-kris/bear_penh/issues"
   },
-  "homepage": "https://github.com/Dev-kris/bear_penh#readme"
+  "homepage": "https://github.com/Dev-kris/bear_penh#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  }
 }
