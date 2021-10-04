@@ -9,6 +9,9 @@
   opacity: 0.8;
   filter: (opacity=90);
 }
+body {
+  font-size: 1.2em;
+}
 
 .parallax {
   /* The image used */
