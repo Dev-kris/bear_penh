@@ -31,6 +31,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/scrollToBody.js"></script>
 
     <title>Document</title>
   </head>
@@ -194,38 +195,58 @@
     <!-- Hero Section -->
 
     <!-- Comming Soon Video -->
-
-    <div id="recent-video" class="container py-5">
-      <div class="row">
-        <div class="text-center">
-          <h1 class="text-white p-4" id="aboutUs">What comes next?</h1>
-          <div
-            class="
-              embed-responsive embed-responsive-16by9
-              d-flex
-              align-items-center
-              justify-content-center
-            "
-          >
-            <iframe
-              class="shadow-lg mb-5 bg-dark rounded video-bg layer p-4"
-              width="720"
-              height="405"
-              src="https://www.youtube.com/embed/W1zEB49Seic"
-              title="YouTube video player"
-              allowfullscreen
-            ></iframe>
+    <body>
+      <div id="recent-video" class="container py-5">
+        <div class="row">
+          <div class="text-center">
+            <h1 class="text-white p-4" id="aboutUs">What comes next?</h1>
+            <div
+              class="
+                embed-responsive embed-responsive-16by9
+                d-flex
+                align-items-center
+                justify-content-center
+              "
+            >
+              <iframe
+                class="shadow-lg mb-5 bg-dark rounded video-bg layer p-4"
+                width="720"
+                height="405"
+                src="https://www.youtube.com/embed/W1zEB49Seic"
+                title="YouTube video player"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Comming Soon Video -->
+      <!-- Comming Soon Video -->
 
-    <!-- About Us -->
-    <a id="anchor" class="anchor"></a>
+      <!-- About Us -->
+      <a id="anchor" class="anchor"></a>
 
-    <!-- About Us -->
+      <div class="container text-center" id="about">
+        <h2 class="text-white p-4">
+          Welcome to The Bear Penh, the media company behind breakout shows such
+          as Vampire: Blood on the Bayou and Thala Unbound as seen on Twitch and
+          YouTube.
+        </h2>
+        <p class="text-light">
+          <br />
+          Founded in 2021, we have produced a growing number of recurring
+          series, miniseries, and one-shot productions of all sorts. Our team is
+          dedicated to producing shows and media for nerds, by nerds. <br />
+          We strive to deliver top quality entertaining content, and provide a
+          diverse and secure place for our community to explore their favorite
+          hobbies. Whether you're into tabletop role playing games, podcasting,
+          video games, astrology, language exchange, art, or audiobooks you've
+          got a place by the Honey Pot.
+        </p>
+      </div>
+
+      <!-- About Us -->
+    </body>
 
     <!-- Footer -->
 
@@ -299,21 +320,7 @@
     <!-- Footer -->
   </body>
 </html>
-<script>
-  function scrollToBody() {
-    const element = document.getElementById('recent-video');
-    element.scrollIntoView();
-  }
 
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false,
-    });
-  });
-</script>
 <script src="./js/aos.js"></script>
 
 <!-- Links -->
