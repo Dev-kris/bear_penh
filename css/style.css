@@ -37,6 +37,15 @@ body {
   font-size: 1.5em;
 }
 
+.text-outline {
+  color: #fff;
+  /* text-shadow: 0.04em 0 black, 0 0.04em black, -0.04em 0 black, 0 -0.04em black;
+  text-shadow: 0.04em 0 black, 0 0.04em black, -0.04em 0 black, 0 -0.04em black,
+    -0.04em -0.04em black, -0.04em 0.04em black, 0.04em -0.04em black,
+    0.04em 0.04em black;
+  -webkit-font-smoothing: antialiased;*/
+  font-size: 1.5em;
+}
 .subtitle-format {
   color: white;
   font-size: 1.3em;
