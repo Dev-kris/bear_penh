@@ -91,7 +91,7 @@ a.anchor {
 }
 
 .video-bg {
-  background-image: url('/images/vid-bg.png');
+  background-image: url('../images/vid-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
