@@ -37,6 +37,26 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- Glider CSS -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+
+    <!-- Optional Theme Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+
+    <!-- Glider CSS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
     <title>Document</title>
   </head>
   <body class="bg-dark">
@@ -165,93 +185,87 @@
     </nav>
     <!-- Navigation -->
 
-    <!-- ======= Contact Section ======= -->
-    <section
-      id="contact"
-      class="contact py-5 d-flex align-items-center justify-content-center"
-    >
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>
-            Want to join our adventure? Ask us a question? Attach a scroll to a
-            charmed falcon below.
-          </p>
+    <!-- Hero Section -->
+
+    <div class="d-flex min-vh-100 parallax">
+      <div
+        class="align-self-center text-center text-light col-md-8 offset-md-2"
+      >
+        <div>
+          <h1 class="display-1">
+            <strong>Miniseries&nbsp;</strong>
+          </h1>
         </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <p>
-                  We also have a necromancer on hand in case you wish to
-                  reanimate someone or something to deliver your message by
-                  hand, or whatever appendages they have. If neither option
-                  interests you, feel free to send us an email, we will respond
-                  as soon as we finish this boss fight.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            <form
-              action="https://formspree.io/f/mleavloo"
-              method="POST"
-              role="form"
-              class="php-email-form"
-            >
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    id="email"
-                    placeholder="Your Email"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="subject"
-                  id="subject"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <div class="form-group mt-3">
-                <textarea
-                  class="form-control"
-                  name="message"
-                  rows="5"
-                  placeholder="Message"
-                  required
-                ></textarea>
-              </div>
-
-              <div class="text-center py-3">
-                <button type="submit">Send Message</button>
-              </div>
-            </form>
-          </div>
+        <!-- Down Arrow -->
+        <div class="lc-block">
+          <svg
+            onclick="scrollToBody()"
+            transform="translate(0, 300)"
+            width="4em"
+            height="4em"
+            viewBox="0 0 16 16"
+            class="text-light"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+            ></path>
+          </svg>
         </div>
+        <!-- Down Arrow -->
       </div>
-    </section>
-    <!-- End Contact Section -->
+    </div>
+    <!-- Hero Section -->
+
+    <!-- Recent Videos -->
+    <a id="anchor" class="anchor py-3"></a>
+    <h1 class="text-white text-center py-4 pb-4">
+      The Haunting of Mallory Mergaut
+    </h1>
+    <!-- Glider -->
+    <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLquglwH74v0ya2B5zimTnzhv9yjhhSo_K"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <hr />
+    <hr />
+    <h1 class="text-white text-center py-4 pb-4">Undead in Dallas</h1>
+    <!-- Glider -->
+    <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLquglwH74v0xfqECi-McB4sFf-6lsfJTq"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Glider -->
+
+    <div class="container text-center">
+      <br />
+
+      <br />
+
+      <br />
+    </div>
+    <!-- Recent Videos -->
 
     <!-- Footer -->
 
@@ -323,11 +337,27 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
+    <!-- =====  Scripts  ===== -->
+    <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <script>
+      const config = {
+        perView: 2,
+        breakpoints: {
+          800: { perView: 1 },
+        },
+      };
+
+      new Glide('.glide', config).mount();
+    </script>
+
+    <!-- =====  Scripts  ===== -->
   </body>
 </html>
 <script>
   function scrollToBody() {
-    const element = document.getElementById('recent-video');
+    const element = document.getElementById('anchor');
     element.scrollIntoView();
   }
 
