@@ -1,6 +1,3 @@
-/* .video-size {
-  width: 100%;
-} */
 * {
   font-family: 'Squada One', cursive;
 }
@@ -19,11 +16,11 @@ body {
   /* background-color: #444; */
   background-blend-mode: overlay;
   /* Full height */
-  height: 100%;
+  width: auto;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -115,8 +112,12 @@ a.anchor {
 /* media queries */
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 800px) {
   .parallax {
     background-attachment: scroll;
+    background-size: 260vw 180vw;
+  }
+  .lc-block {
+    visibility: hidden;
   }
 }
