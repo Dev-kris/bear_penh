@@ -120,4 +120,8 @@ a.anchor {
   .lc-block {
     visibility: hidden;
   }
+  .display-1 {
+    padding: 1vw 1vw 1vw 15vw;
+    transform: translateY(-80%);
+  }
 }
