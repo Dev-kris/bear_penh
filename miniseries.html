@@ -45,6 +45,7 @@
       var playListID = [
         'PLquglwH74v0ya2B5zimTnzhv9yjhhSo_K',
         'PLquglwH74v0xfqECi-McB4sFf-6lsfJTq',
+        'PLquglwH74v0wKsEh-Vzc7emYFgJjXnFHh',
       ]; // replace with your desired youtube playlist ID
       var apiKey = 'AIzaSyDM-NuPZl4ryPw4eGXg7EDjgw6R5xdgehk'; // this default YouTube API key will work but you should change it to your own
       var autoPlayNext = 0; // auto play next video in list when current ends? 0 for no. 1 for yes.
@@ -133,14 +134,6 @@
                     class="dropdown-item"
                     href="./shows-pages/blood_on_the_bayou.html"
                     >Blood on the Bayou
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./shows-pages/rage_across_the_bayou.html"
-                  >
-                    Rage Across the Bayou
                   </a>
                 </li>
               </ul>
@@ -276,7 +269,29 @@
         </div>
       </div>
     </div>
+    <h1 class="text-white text-center py-4 pb-4">Rage Across The Bayou</h1>
 
+    <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+      <div id="player-container3" class="player-container">
+        <!-- THE YOUTUBE PLAYER -->
+        <div class="mlvp-container">
+          <div id="vid_frame3"></div>
+        </div>
+        <!-- LEFT AND RIGHT ARROWS -->
+        <div class="mlvp-arrows">
+          <div class="mlvp-arrow-left">
+            <i class="demo-icon icon-left-open">&#xe800;</i>
+          </div>
+          <div class="mlvp-arrow-right">
+            <i class="demo-icon icon-right-open">&#xe801;</i>
+          </div>
+        </div>
+        <!-- THE PLAYLIST -->
+        <div class="mlvp-list-container">
+          <div class="mlvp-list noselect"></div>
+        </div>
+      </div>
+    </div>
     <hr />
     <hr />
 
