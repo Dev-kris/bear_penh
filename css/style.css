@@ -24,6 +24,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.parallax_mekong {
+  /* The image used */
+  background-image: url('../images/cityOfMist/mekong_hero_bg.jpeg');
+  /* background-color: #444; */
+  background-blend-mode: overlay;
+  /* Full height */
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .text-outline {
   color: #fff;
   /* text-shadow: 0.04em 0 black, 0 0.04em black, -0.04em 0 black, 0 -0.04em black;
@@ -116,6 +130,12 @@ a.anchor {
   .parallax {
     background-attachment: scroll;
     background-size: 260vw 180vw;
+  }
+
+  .parallax_mekong {
+    background-attachment: scroll;
+    background-size: 160vw 160vw;
+    background-position-y: 4em;
   }
   .lc-block {
     visibility: hidden;
