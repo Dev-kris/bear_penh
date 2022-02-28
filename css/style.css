@@ -124,4 +124,7 @@ a.anchor {
     padding: 1vw 1vw 1vw 15vw;
     transform: translateY(-80%);
   }
+  .container {
+    overflow-x: hidden;
+  }
 }
